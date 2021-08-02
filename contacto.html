@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="index.js"></script>
+    <title>Contacto</title>
+</head>
+<body class="contenedor">
+
+    <header class="header" >
+        <div class="logo">
+            <a href="index.html">
+                <h1>
+                    Capacitarte
+                </h1>
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Noticias</a></li>
+            <li>
+                <a href="">Más Noticias</a> 
+            </li>
+            <li>
+                <a href="">Contactos</a> 
+            </li>      
+            
+        </ul>
+    </nav>
+
+    <main class="portada">
+        <h2>Contacto</h2>
+
+            <!-- Armar un formulario de consultas
+            Nombre y apellido
+            Email
+            localidad
+            comentario o mensaje
+            check de suscripcion al newsletter      
+            -->
+
+            <form action="" method="GET" id="formContacto">
+                <!-- los campos de formulario son elementos de linea -->
+                <div>
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escriba su nombre">
+                </div>
+
+                <div>
+                    <label>Email: </label>
+                    <input type="email" name="email" id="email" required
+                        pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,99})$">
+                </div>
+
+                <div>
+                    <label>Localidad: </label>
+                    <input type="text" name="localidad" id="localidad" required placeholder="Escriba su Localidad">
+                </div>
+
+                <div>
+                    <label>Comentario: </label>
+                    <textarea name="comentario" id="comentario" required></textarea>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="newsletter" checked value="true" class="check">
+                        Quiero suscribirme al sitio y llenarme de SPAM
+                    </label>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="guardarDatos()" value="Escribinos!"> Escribinos!</button>
+                </div>
+
+            </form>
+
+    </main>
+
+
+
+    
+</body>
+</html>
